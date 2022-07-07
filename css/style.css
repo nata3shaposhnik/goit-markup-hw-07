@@ -732,6 +732,7 @@ img {
 
 .modal {
   position: absolute;
+  padding: 40px;
   top: 50%;
   left: 50%;
   min-width: 528px;
@@ -743,17 +744,18 @@ img {
 }
 
 .button-modal {
-  display: block;
-  margin-left: auto;
-  padding-top: 8px;
-  padding-right: 8px;
-  border: 0;
-  background-color: #ffffff;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 .svg-modal {
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   fill: #000;
   stroke: rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -762,20 +764,16 @@ img {
 
 .button-modal:focus .svg-modal {
   fill: var(--accent-color);
+  outline: 1px solid var(--accent-color);
 }
 
 .svg-modal:hover {
   fill: var(--accent-color);
 }
 
-.modal-form {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
 .modal-description {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -786,7 +784,7 @@ img {
 
 .modal-group {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .modal-form-label {
@@ -804,19 +802,12 @@ img {
   border-color: var(--accent-color);
 }
 
-.label-text {
-  position: absolute;
-  top: -50%;
-  left: 0;
-}
-
 .modal-form-svg {
   position: absolute;
   width: 18px;
   height: 18px;
   top: 50%;
   left: 12px;
-  transform: translateY(-50%);
   fill: #000;
 }
 
@@ -833,17 +824,11 @@ img {
   border-color: #2196f3;
 }
 
-.label-text,
-.label-textarea {
+.label-text {
+  display: block;
   margin-bottom: 4px;
 }
 
-.label-textarea {
-  position: absolute;
-  top: -25%;
-  left: 0;
-  transform: translateY(80%);
-}
 .modal-form-textarea {
   padding: 12px 16px;
   resize: none;
