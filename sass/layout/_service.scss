@@ -1,0 +1,35 @@
+.service {
+    background-color: var(--secondary-bg-colour);
+    text-align: center;
+
+    &--overlay{
+        max-width: 1600px;
+            max-height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url("../../images/bgc.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+    }
+    & .container {
+        padding-top: 200px;
+            padding-bottom: 200px;
+    }
+    &__title {
+        font-weight: 700;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: var(--primary-bg-colour);
+            margin-bottom: 30px;
+    }
+    &__button {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,78 @@
+.header .container {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    &__list{
+        display: flex;
+            align-items: center;
+            margin-left: auto;
+    }
+    &__item:not(:last-child) {
+        margin-right: 50px;
+    }
+    &__link {
+        font-family: var(--main-font);
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            color: var(--secondary-title-text-colour);
+            padding-top: 32px;
+            padding-bottom: 32px;
+            display: inline-block;
+            transition: color 250ms var(--timing-function);
+
+            &:hover, &:focus, &:active {
+                color: var(--accent-colour);
+            }
+            &--curent {
+                    color: var(--accent-colour);
+                }
+            &.contact {display: flex;
+                align-items: center;
+                fill: currentcolor;
+                transition: color 250ms var(--timing-function);
+            }
+            &.contact:hover .navigation_icon,
+            &.contact:focus .navigation_icon {
+                fill: var(--accent-colour);
+            }
+
+
+            &--current::after {
+                content: "";
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: var(--accent-colour);
+
+            }
+            }
+    &__icon {
+        margin-right: 10px;
+        transition: fill 250ms var(--timing-function);
+
+        &.mail{
+            margin-right: 10px;
+            width: 16px;
+            height: 12px;
+            fill: currentColor;
+        }
+        &.phone {
+            margin-right: 10px;
+                width: 10px;
+                height: 16px;
+                fill: currentColor;
+        }
+            }
+    &__item {
+        position: relative;
+    }
+}
+

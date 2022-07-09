@@ -1,0 +1,34 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list{
+      display: flex;  
+    }
+    &__item {
+        width: calc((100% - 150px) / 6);
+        margin-right: 30px;
+
+        &:last-child {
+                margin-right: 0;
+            }
+    }
+    &__link {
+            display: flex;
+            width: 170px;
+            height: 90px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #afb1b8;
+            border-radius: 4px;
+            fill: #afb1b8;
+            transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
+    
+            &:hover,
+            &:focus {
+                fill: var(--accent-colour);
+                border-color: var(--accent-colour);
+            }
+        }
+}
+

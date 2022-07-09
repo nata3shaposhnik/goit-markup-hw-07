@@ -35,18 +35,18 @@
             <li class="navigation__item"><a href="/" class="navigation__link link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact list">
-          <li class="contact__item">
-            <a class="contact__link link" hrel="mailto:info@devstudio.com">
-              <svg class="contact__icon">
+        <ul class="navigation__list list">
+          <li class="navigation__item">
+            <a class="navigation__link contact link" hrel="mailto:info@devstudio.com">
+              <svg class="navigation__icon mail">
                 <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact__item">
-            <a class="contact__link link" href="tel:+380961111111">
-              <svg class="contact__icon">
+          <li class="navigation__item">
+            <a class="navigation__link contact link" href="tel:+380961111111">
+              <svg class="navigation__icon phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -59,11 +59,7 @@
       <section class="service service--overlay">
         <div class="container">
           <h1 class="service__title">Эффективные решения для вашего бизнеса</h1>
-          <button
-            class="service__button service__button--active button"
-            type="button"
-            data-modal-open
-          >
+          <button class="service__button button--active button" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -140,7 +136,7 @@
               </div>
             </li>
             <li class="work__item item">
-              <div class="work__card">
+              <div class="thumb">
                 <img class="thumb__image" src="./images/img3.jpg" alt="Моделирование" />
                 <div class="product">
                   <p class="product__text">Дизайнерские решения</p>
@@ -281,7 +277,7 @@
               <div class="content">
                 <h3 class="content__title">Николай Тарасов</h3>
                 <p class="content__description">Marketing</p>
-                <ul class="content__list list">
+                <ul class="social-networks list">
                   <li class="social-networks__item">
                     <a
                       class="social-networks__link link"
@@ -342,7 +338,7 @@
               <div class="content">
                 <h3 class="content__title">Михаил Ермаков</h3>
                 <p class="content__description">UI Designer</p>
-                <ul class="content__list">
+                <ul class="social-networks list">
                   <li class="social-networks__item">
                     <a
                       class="social-networks__link link"
@@ -543,7 +539,7 @@
             <b class="subscription__title">Подпишитесь на рассылку</b>
             <form class="subscription__form">
               <label class="subscription__label">
-                <input class="subscription__mail" type="email" name="mail" placeholder="E-mail" />
+                <input class="subscription__email" type="email" name="mail" placeholder="E-mail" />
               </label>
               <button class="subscription__button button" type="submit">
                 Подписаться
@@ -565,7 +561,7 @@
         </button>
 
         <form class="modal-form">
-          <b class="message">Оставьте свои данные, мы вам перезвоним</b>
+          <p class="message">Оставьте свои данные, мы вам перезвоним</p>
           <div class="form-wrapper">
             <label class="form-wrapper__label">
               <span class="form-wrapper__text">Имя</span>
@@ -578,7 +574,7 @@
           <div class="form-wrapper">
             <label class="form-wrapper__label">
               <span class="form-wrapper__text">Телефон</span>
-              <input class="modal-form__input" type="tel" name="tel" />
+              <input class="form-wrapper__input" type="tel" name="tel" />
               <svg class="form-wrapper__icon">
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
@@ -587,7 +583,7 @@
           <div class="form-wrapper">
             <label class="form-wrapper__label">
               <span class="form-wrapper__text">Почта</span>
-              <input class="modal-form__input" type="email" name="mail" />
+              <input class="form-wrapper__input" type="email" name="mail" />
               <svg class="form-wrapper__icon">
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
@@ -611,9 +607,7 @@
             Соглашаюсь с рассылкой и принимаю
             <a class="modal-form__link link" href="/">Условия договора</a>
           </label>
-          <button class="modal-form__button modal-form__button--active button" type="submit">
-            Отправить
-          </button>
+          <button class="modal-form__button button button--active" type="submit">Отправить</button>
         </form>
       </div>
     </div>

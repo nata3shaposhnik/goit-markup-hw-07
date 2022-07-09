@@ -1,0 +1,25 @@
+.logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    &__theme--light {
+        color: var(--secondary-title-text-colour);
+        font-weight: bold;
+        margin-right: 93px;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__accent {
+        font-size: 26px;
+        line-height: 1.19;
+        color: var(--accent-colour);
+    }
+
+    &__theme--dark {
+        color: var(--primary-bg-colour);
+        margin-bottom: 20px;
+    }
+}
