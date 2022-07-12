@@ -31,10 +31,16 @@
             &--curent {
                     color: var(--accent-colour);
                 }
-            &.contact {display: flex;
+            &.contact {
+                display: flex;
                 align-items: center;
+                color: var(--primary-text-colour);
                 fill: currentcolor;
                 transition: color 250ms var(--timing-function);
+
+                &:hover, &:focus {
+                    color: var(--accent-colour);
+                }
             }
             &.contact:hover .navigation_icon,
             &.contact:focus .navigation_icon {

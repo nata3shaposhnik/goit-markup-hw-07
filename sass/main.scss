@@ -7,8 +7,12 @@
 @import "./components/title";
 @import "./components/header-border";
 @import "./components/button";
+@import "./components/backdrop";
+@import "./components/modal";
 
 @import "./layout/header";
+@import "./layout/jobs-group-pf";
+@import "./layout/jobs-pf";
 @import "./layout/service";
 @import "./layout/advantages";
 @import "./layout/work";
@@ -16,6 +20,5 @@
 @import "./layout/clients";
 @import "./layout/footer";
 
-@import "./components/backdrop";
-@import "./components/modal";
+
 

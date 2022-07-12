@@ -19,6 +19,7 @@
     }
 
     &__theme--dark {
+        display: block;
         color: var(--primary-bg-colour);
         margin-bottom: 20px;
     }
